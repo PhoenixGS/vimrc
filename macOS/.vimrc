@@ -202,6 +202,8 @@ set go= " 不要图形按钮
 
 set guifont = Source_Code_Pro:h15 " 设置字体
 
+“set guifont=Monaco:h16
+
 syntax on " 语法高亮
 
 autocmd InsertLeave * se nocul " 用浅色高亮当前行
@@ -682,10 +684,13 @@ let g:miniBufExplModSelTarget = 1
 
 set incsearch "在输入要搜索的文字时，vim会实时匹配
 
-set guifont=Source_Code_Pro:h15 "设置字体
-
 set autochdir
 
 set lines=35 columns=118
 
 set background=dark
+
+set list
+
+set listchars=tab:▸\ ,eol:¬
+
