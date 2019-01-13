@@ -200,9 +200,11 @@ set go= " 不要图形按钮
 
 "color asmanian2 " 设置背景主题
 
-set guifont = Source_Code_Pro:h15 " 设置字体
+set guifont=Menlo\ Regular:h15
 
-“set guifont=Monaco:h16
+"set guifont = Source_Code_Pro:h15 " 设置字体
+
+"set guifont=Monaco:h16
 
 syntax on " 语法高亮
 
@@ -586,7 +588,10 @@ au BufRead,BufNewFile * setfiletype txt
 
 :inoremap ) <c-r>=ClosePair(')')<CR>
 
-:inoremap { {<CR>}<ESC>O
+":inoremap { {<CR>}<ESC>O
+:inoremap { {}<ESC>i
+
+:inoremap {{ {<CR>}<ESC>O
 
 :inoremap } <c-r>=ClosePair('}')<CR>
 
@@ -693,4 +698,5 @@ set background=dark
 set list
 
 set listchars=tab:▸\ ,eol:¬
+
 
